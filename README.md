@@ -1,6 +1,5 @@
-# GameEngineAssignment3
+# GameEngine Final Project
 
-https://youtu.be/i-4t4Ar7B_0
 
 Brouwer, Evyn 100702629
 
@@ -27,8 +26,6 @@ I am the only person currently working on this project.
 In-class Labs and Lectures
 - I wouldn't be taking this course if I knew it all from the start
  
-https://gameprogrammingpatterns.com/object-pool.html
-A refresher on Object Pools
 
 
 Tutorial

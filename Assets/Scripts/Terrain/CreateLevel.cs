@@ -543,7 +543,6 @@ public class CreateLevel : MonoBehaviour
     public void saveData()
     {
         List<int> test = new List<int>();
-        Debug.Log(rooms.Count);
         for(int i = 0; i < rooms.Count; i++)
         {
             test.Add((int)rooms[i].pos.x);

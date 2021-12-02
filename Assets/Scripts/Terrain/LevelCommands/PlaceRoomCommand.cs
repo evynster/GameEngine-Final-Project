@@ -15,17 +15,7 @@ public class PlaceRoomCommand : LevelCommand
         levelStart = l;
     }
     public void Execute()
-    {
-        Debug.Log("Room pos " + room.pos);
-        Debug.Log("Room size + pos " + (room.pos + room.size));
-        for (int o = 0; o < room.connectedHalls.Count; o++)
-        {
-            Debug.Log("Hall number " + o);
-            Debug.Log("Hall start " + room.connectedHalls[0].start);
-            Debug.Log("Hall end " + room.connectedHalls[0].end);
-        }
-        Debug.Log("||||||||||||||||||||||||||||||||||||||||");      
-
+    {  
         for (int i = 0; i < room.size.x; i++)
         {
             for (int n = 0; n < room.size.y; n++)

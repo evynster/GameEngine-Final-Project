@@ -233,6 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   generateAmount: {fileID: 0}
   levelstart: {fileID: 1991673099}
+  goal: {fileID: 614654553}
   maxSizeX: 100
   maxSizeY: 100
   minRooms: 50
@@ -1527,6 +1528,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &614654553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4635041450664218318, guid: 82a6280a4abcdaa468d5a837f07ccb2b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4635041450109753152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &697059491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4386,6 +4393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635041450664218318, guid: 82a6280a4abcdaa468d5a837f07ccb2b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4635041450664218322, guid: 82a6280a4abcdaa468d5a837f07ccb2b,
         type: 3}

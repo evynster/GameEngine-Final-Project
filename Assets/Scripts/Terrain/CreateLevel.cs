@@ -41,6 +41,8 @@ public class CreateLevel : MonoBehaviour
 
     [SerializeField]
     private GameObject levelstart = null;
+    [SerializeField]
+    private GameObject goal = null;
 
     public int maxSizeX = 100, maxSizeY = 100;
 
@@ -157,6 +159,10 @@ public class CreateLevel : MonoBehaviour
         {
             LevelCommandInvoker.AddCommand(new PlaceHallCommand(halls[i], levelstart));
         }
+
+        int goalRoom = Random.Range(0,rooms.Count);
+        goal.transform.position = new Vector3(levelstart.transform.position.x + (rooms[goalRoom].pos.x + (rooms[goalRoom].size.x / 2)) * 4, 1, levelstart.transform.position.y + (rooms[goalRoom].pos.y + (rooms[goalRoom].size.y / 2)) * 4);
+        goal.SetActive(true);
     }
     /*
      * room creation

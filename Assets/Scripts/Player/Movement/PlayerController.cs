@@ -344,7 +344,7 @@ public class PlayerController : MonoBehaviour
                     if(hitInfo.collider.gameObject.name == ("Goal"))
                     {
                         hitInfo.collider.gameObject.SetActive(false);
-                        Debug.Log("It took you " + GameObject.FindGameObjectWithTag("Level").GetComponent<CreateLevel>().generateAmount.generations + " level generations to get the goal!");
+                        Debug.Log("You won!");
                     }
                 }
                 

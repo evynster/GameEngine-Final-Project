@@ -158,7 +158,7 @@ public class BuildingFactory : MonoBehaviour
         floorObject = floor;
         floors = new List<GameObject>();
 
-        int floorMax = GetComponent<CreateLevel>().maxSizeX * GetComponent<CreateLevel>().maxSizeY;
+        int floorMax = GetComponent<CreateLevel>().maxSizeX * GetComponent<CreateLevel>().maxSizeY /2;
         for (int i = 0; i < floorMax; i++)
         {
             floors.Add(Instantiate(floorObject));
@@ -170,7 +170,7 @@ public class BuildingFactory : MonoBehaviour
         wallObject = wall;
         walls = new List<GameObject>();
 
-        int wallMax = floorMax * 2;
+        int wallMax = floorMax/2;
 
         for (int i = 0; i < wallMax; i++)
         {
